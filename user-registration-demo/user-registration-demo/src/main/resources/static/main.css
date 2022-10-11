@@ -1,0 +1,140 @@
+/* UTILITIES */
+body {
+    
+  
+    font-family: cursive;
+    background: lightgoldenrodyellow;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* NAVBAR STYLEING STARTS */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px 10px;
+    background-color: darkgoldenrod;
+    position: relative;
+    border: 1px solid black;
+    
+}
+
+.navbar-links :hover{
+    border: 1px solid black;
+     
+}
+
+.navbar-links a {
+    margin-right: 10px;
+  
+}
+
+
+
+/* LOGO */
+.logo {
+    font-size: x-large;
+    color: black;
+    text-align: top;
+}
+
+/*style for first heading*/
+h1 {
+    text-align: center;
+    margin: 10px;
+}
+
+/*style for paragraph text*/
+p {
+ 
+    text-align: center;
+    left: auto;
+}
+
+/* made this for the header */
+header {
+    background-color:beige;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    color: white;
+}
+#HeaderBar h1 {
+    display: inline-block;
+}
+.LoginControl {
+    float: right;
+    margin-left: 5px;
+}
+
+.LoginControl button {
+    border-radius: 20px;
+}
+
+.clear {
+    clear: both;
+}
+
+#username-field, #password-field, #login-form-submit {
+    border-radius: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: orange;
+    padding: 15px;
+    margin: 10px 0px;
+    border: none;
+    cursor: pointer;
+}
+
+/*input for forms */
+input[type="text"], input[type="password"],input[type="email"] {
+    width: 100%;
+    margin: 8px 0px;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 2px solid green;
+    box-sizing: border-box;
+}
+
+button:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+}
+
+.container {
+    padding: 25px;
+    background-color: lightblue;
+}
+
+.hidden {
+    display: none;
+}
+
+.header {
+text-align:center;
+}
+
+/*this is to underline links */
+footer a:hover {
+    text-decoration: underline;
+ }
+
+ /*Need to fix footer, to make it appear at the bottom */
+footer {
+    padding:1px;
+    left: 0%;
+    bottom: 0%;
+    width: 100%;
+    background-color: rgb(226, 162, 14);
+    color: black;
+    text-align: center;
+
+}

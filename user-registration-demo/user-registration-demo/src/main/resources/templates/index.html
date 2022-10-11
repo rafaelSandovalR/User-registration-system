@@ -1,0 +1,58 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+<script defer src="main.js"></script>
+</head>
+<body>
+<div id="HeaderBar">
+    <h1>In My Shoes - Home Page</h1>
+
+    <!--this is for the login button-->
+    <div class="LoginControl">
+        <button type="button" id="LoginBtn">
+            <a href="Login.html">Login</a>
+        </button>
+    </div>
+    <div class="LoginControl">
+        <button type="button" id="LogoutBtn">
+            <a onclick="logout()">Logout</a>
+        </button>
+    </div>
+
+    <!--This is to redirect to the signup-->
+    <div class="LoginControl">
+        <button type="button" id="SignUpBtn">
+            <a href="StudentForm.html">Sign Up</a>
+        </button>
+    </div>
+
+ 
+
+</div>
+<div class="clear"></div>
+<div class="navbar">
+    <div class="navbar-links">
+        <header>
+            <a th:href="@{/index}">IMS - Home</a>
+            <a th:href="@{/ContactUs}">Contact Us</a>
+            <a th:href="@{/AboutUs}">About Us</a>
+            <a th:href="@{/Calendar}">Calendar</a>
+            <a th:href="@{/FAQ_1}">Frequently Asked Questions</a>
+        </header>
+    </div>
+</div>
+<!-- Make an overflowing log-in and log-out menu from top right -->
+<!-- Some description-->
+<p>Welcome to "In My Shoes" a student mentor/student mentee website created to help students connect with each other for general help at college. It has become redundant in our ongoing global pandemic to expect students to show up to campus for issues that can be solved virtually. This is where our website comes to play, by using IMS students can chat/video call to ask questions related to college. They should be able to communicate what they want and be guided to the resource if applicable.</p>
+<footer>
+    <p>Authors: Sidra Naru, Ryan Setaruddin, Yvens Pierre, Gary Soza, Brain Guerra, and Rafael Ramirez</p>
+    <p>Company: InMyShoes</p>
+    <p><a href="tel:+1345-759-0274">CLICK TO CALL</a></p>
+    <p><a href="mailto:InMyShoes@gmail.com">InMyShoes@gmail.com</a></p>
+</footer>
+</body>
+</html>

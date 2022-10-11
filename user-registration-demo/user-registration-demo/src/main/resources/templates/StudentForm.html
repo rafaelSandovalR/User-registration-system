@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="formStyles.css">
+<script src="register.js"></script>
+</head>
+<body>
+
+<h1>Student Mentee Information</h1>
+<div class="navbar">
+    <div class="navbar-links">
+        <header>
+            <a href="index.html">IMS - Home</a>
+            <a href="Calendar.html">Calendar</a>
+            <a href="StudentForm.html">Student Mentee Application</a>
+            <a href="MentorForm.html">Student Mentor Application</a>
+            <a href="ContactUs.html">Contact Us</a>
+            <a href="AboutUs.html">About Us</a>
+            <a href="FAQ_1.html">Frequently Asked Questions</a>
+        </header>
+    </div>
+</div>
+<h2>Become a student mentee, fill out the application below!</h2>
+
+<p>Have you ever needed help and did not know where to go? Maybe it</p>
+
+<form id="MenteeForm" name="MenteeForm">
+    <label for="inMyShoesID">IMS Id: </label>
+    <input type="text" id="inMyShoesID" name="inMyShoesID"><br><br>
+
+    <label for="fname">First Name: </label>
+    <input type="text" id="fname" name="fname"><br><br>
+
+    <label for="lname">Last Name: </label>
+    <input type="text" id="lname" name="lname"><br><br>
+
+    <label for="major">Major: </label>
+    <input type="text" id=major" name="major"><br><br>
+
+    <label for="userEmail">Email: </label>
+    <input type="email" id="userEmail" name="userEmail"><br><br>
+
+    <label for="userPassword">Password: </label>
+    <input type="password" id="userPassword" name="userPassword" required><i>At least 8 characters (1+ uppercase, numbers, special character)</i><br><br>
+    <button type="button" onClick="register()">Submit</button>
+</form>
+<footer>
+    <p>Authors: Sidra Naru, Ryan Setaruddin, Yvens Pierre, Gary Soza, Brain Guerra, and Rafael Ramirez</p>
+    <p>Company: InMyShoes</p>
+    <p><a href="tel:+1345-759-0274">CLICK TO CALL</a></p>
+    <p><a href="mailto:InMyShoes@gmail.com">InMyShoes@gmail.com</a></p>
+</footer>
+</body>
+</html>

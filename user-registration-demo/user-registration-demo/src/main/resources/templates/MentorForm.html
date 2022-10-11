@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="formStyles.css">
+<script src="register.js"></script>
+</head>
+<body>
+
+<h1>Student Mentor Information</h1>
+
+<div class="navbar">
+    <div class="navbar-links">
+        <header>
+            <a href="index.html">IMS - Home</a>
+            <a href="Calendar.html">Calendar</a>
+            <a href="StudentForm.html">Student Mentee Application</a>
+            <a href="MentorForm.html">Student Mentor Application</a>
+            <a href="ContactUs.html">Contact Us</a>
+            <a href="AboutUs.html">About Us</a>
+            <a href="FAQ_1.html">Frequently Asked Questions</a>
+        </header>
+    </div>
+</div>
+
+<!-- make sure to have the description here -->
+<p>There are many benefits of becoming a student mentor for "In My Shoes"</p>
+<!-- make the questions etc, also JS to collect submissions-->
+<h2>Please fill out the form below to submit your application to be considered for the Mentor position: </h2>
+<fieldset>
+    <legend>Mentor Form</legend>
+<form name="MentorForm">
+    <label for="inMyShoesID">IMS Id: </label>
+    <input type="text" id="inMyShoesID" name="inMyShoesID"><br><br>
+
+    <label for="fname">First Name: </label>
+    <input type="text" id="fname" name="fname"><br><br>
+
+    <label for="lname">Last Name: </label>
+    <input type="text" id="lname" name="lname"><br><br>
+
+    <label for="major">Major: </label>
+    <input type="text" id="major" name="major"><br><br>
+
+    <!--Create style for email-->
+    <label for="userEmail">Email: </label>
+    <input type="email" id="userEmail" name="userEmail"><br><br>
+
+    <label for="userPassword">Password: </label>
+    <input type="password" id="userPassword" name="userPassword" required><br><br>
+
+    <!--Mentor transcript should be opened using the file explorer-->
+    <label for="mentorTranscript">Transcript: </label>
+    <input type="text" id="mentorTranscript" name="mentorTranscript"><br><br>
+
+    <label for="fileselect">Upload:</label>
+    <input type="file" name="upload" id="fileselect">
+
+    <button type="button" onclick="register()">Submit</button>
+</form>
+</fieldset>
+
+<footer>
+    <p>Authors: Sidra Naru, Ryan Setaruddin, Yvens Pierre, Gary Soza, Brain Guerra, and Rafael Ramirez</p>
+    <p>Company: InMyShoes</p>
+    <p><a href="tel:+1345-759-0274">CLICK TO CALL</a></p>
+    <p><a href="mailto:InMyShoes@gmail.com">InMyShoes@gmail.com</a></p>
+</footer>
+</body>
+</html>
+

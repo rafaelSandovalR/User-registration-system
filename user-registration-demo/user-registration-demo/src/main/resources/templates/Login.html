@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link rel="stylesheet" href="main.css">
+    <script defer src="Login.js"></script>
+</head>
+<body>
+<div class="navbar">
+    <div class="navbar-links">
+        <header>
+            <a href="index.html">IMS - Home</a>
+           
+        </header>
+    </div>
+</div>
+
+<h1 id="login-header">Login Page</h1>
+<form class="loginForm" id="loginForm" th:action=@{/Login}" method="post">
+    <div class="container">
+        <label>Username:</label>
+        <input type="text" name="username" id="username-field" class="login-form-field" placeholder=" Enter Username" required>
+        <label>Password:</label>
+        <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Enter Password" required>
+        <button type="submit" id="login-form-submit">Login</button>
+        <input type="checkbox"> Remember me<br>Forget<a href="#"> password?</a>
+    </div>
+</form>
+<div id="login-error-msg-holder">
+    <p id="login-form-error" class="hidden">Invalid username and/or password</p>
+</div>
+<footer>
+    <p>Authors: Sidra Naru, Ryan Setaruddin, Yvens Pierre, Gary Soza, Brain Guerra, and Rafael Ramirez</p>
+    <p>Company: InMyShoes</p>
+    <p><a href="tel:+1345-759-0274">CLICK TO CALL</a></p>
+    <p><a href="mailto:InMyShoes@gmail.com">InMyShoes@gmail.com</a></p>
+</footer>
+</body>
+</html>

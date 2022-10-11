@@ -8,7 +8,6 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import javax.annotation.processing.Generated;
 import javax.persistence.*;
 import java.util.Collection;
 import java.util.Collections;
@@ -32,23 +31,21 @@ public class AppUser implements UserDetails {
             generator = "student_sequence"
     )
     private Long id;
-    private String name;
-    private String username;
+    private String firstName;
+    private String LastName;
     private String email;
     private String password;
     @Enumerated(EnumType.STRING)
     private AppUserRole appUserRole;
-    private Boolean locked;
-    private Boolean enabled;
+    private Boolean locked = false;
+    private Boolean enabled = false;
 
-    public AppUser(String name, String username, String email, String password, AppUserRole appUserRole, Boolean locked, Boolean enabled) {
-        this.name = name;
-        this.username = username;
+    public AppUser(String firstName, String LastName, String email, String password, AppUserRole appUserRole) {
+        this.firstName = firstName;
+        this.LastName = LastName;
         this.email = email;
         this.password = password;
         this.appUserRole = appUserRole;
-        this.locked = locked;
-        this.enabled = enabled;
     }
 
     @Override
@@ -63,9 +60,15 @@ public class AppUser implements UserDetails {
         return password;
     }
 
+    public String getLastName() {
+        return LastName;
+    }
+
+    public String getFirstName(){ return firstName; }
+
     @Override
-    public String getUsername() {
-        return username;
+    public String getUsername(){
+        return email;
     }
 
     @Override

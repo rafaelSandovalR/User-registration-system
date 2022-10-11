@@ -1,0 +1,21 @@
+/* this will be used to style forms NOT main */
+
+form button {
+    background-color: #4CAF50;
+    width: 25%;
+    color: orange;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+form#survey> fieldset {
+	background-color: rgb(241, 232, 181);
+	border-radius: 20px;
+	flex: 1 1 300px;
+	font-size: 0.85em;
+	padding: 10px;
+	margin: 10px;
+
+}
